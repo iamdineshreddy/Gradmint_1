@@ -1,0 +1,12 @@
+{
+  "name": "gradmint-technologies-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Responsive corporate website for Gradmint Technologies Pvt. Ltd.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
