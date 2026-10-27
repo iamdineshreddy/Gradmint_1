@@ -8,7 +8,6 @@ export default function Hero() {
       <div className="container mx-auto max-w-[calc(100vw-40px)]">
         <div className="hero-grid grid grid-cols-1 lg:grid-cols-2 gap-[60px] items-center position-relative z-2">
           <div className="hero-copy max-w-[560px]">
-            <FluidBrandText className="mb-[20px]" />
             <div className="eyebrow inline-flex items-center gap-[10px] text-[11px] font-800 tracking-[0.16em] uppercase text-[#44D4B4] mb-[18px]">
               <span className="inline-block w-[18px] h-[1.5px] bg-[#44D4B4]" />
               TECHNOLOGY &middot; TALENT &middot; TOMORROW
