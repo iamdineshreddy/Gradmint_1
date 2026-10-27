@@ -1,16 +1,18 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu as MenuIcon, X as XIcon } from "lucide-react";
+import { FluidBrandText } from "@/components/ui/fluid-brand-text";
 
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/about/", label: "About" },
   { href: "/services/", label: "Services" },
-  { href: "/internships/", label: "Internships" },
+  { href: "/careers/", label: "Careers" },
 ];
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white/92 backdrop-blur-md">
@@ -21,18 +23,11 @@ export default function Header() {
           aria-label="Gradmint Technologies home"
         >
           <img
-            className="brand-logo h-auto w-auto h-[34px]"
+            className="brand-logo w-auto h-[34px]"
             src="/assets/logo.jpg"
             alt="Gradmint Technologies logo"
           />
-          <span className="brand-name flex flex-col items-start justify-center gap-[2px] m-0">
-            <span className="brand-gradmint block text-[19px] font-800 tracking-[-0.04em] leading-none text-[#005A8F]">
-              gradmint
-            </span>
-            <span className="brand-technologies block text-[8px] font-700 tracking-[0.18em] uppercase leading-none text-[#44D4B4]">
-              technologies
-            </span>
-          </span>
+          <FluidBrandText className="flex-shrink-0" variant="header" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-[26px] text-sm font-600 text-[#687184]">
@@ -40,7 +35,8 @@ export default function Header() {
             <Link
               key={item.href}
               to={item.href}
-              className="text-[#687184] hover:text-[#0078C0] transition-colors duration-150"
+              className={`text-[#687184] hover:text-[#0078C0] transition-colors duration-150 ${location.pathname === item.href ? "text-brand-blue font-bold" : ""}`}
+              aria-current={location.pathname === item.href ? "page" : undefined}
             >
               {item.label}
             </Link>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FluidBrandText } from "@/components/ui/fluid-brand-text";
 
 const currentYear = new Date().getFullYear();
 
@@ -6,7 +7,7 @@ const exploreLinks = [
   { href: "/", label: "Home" },
   { href: "/about/", label: "About us" },
   { href: "/services/", label: "Our services" },
-  { href: "/internships/", label: "Internship programmes" },
+  { href: "/careers/", label: "Careers" },
 ];
 
 const servicesLinks = [
@@ -42,19 +43,8 @@ export default function Footer() {
               className="brand-lockup inline-flex items-center gap-[10px] text-decoration-none mb-[14px]"
               aria-label="Gradmint Technologies home"
             >
-              <img
-                className="brand-logo h-auto w-auto h-[28px]"
-                src="/assets/logo.jpg"
-                alt="Gradmint Technologies logo"
-              />
-              <span className="brand-name flex flex-col items-start justify-center gap-[2px] m-0">
-                <span className="brand-gradmint block text-[16px] font-800 tracking-[-0.04em] leading-none text-[#005A8F]">
-                  gradmint
-                </span>
-                <span className="brand-technologies block text-[8px] font-700 tracking-[0.18em] uppercase leading-none text-[#44D4B4]">
-                  technologies
-                </span>
-              </span>
+              <img className="brand-logo w-auto h-[34px]" src="/assets/logo.jpg" alt="Gradmint Technologies logo" />
+              <FluidBrandText className="flex-shrink-0" variant="footer" />
             </Link>
             <p className="text-sm text-[#687184] leading-[1.8] mb-[10px]">
               Building better technology.<br />
@@ -103,8 +93,9 @@ export default function Footer() {
                 target={item.external ? "_blank" : undefined}
                 rel={item.external ? "noopener noreferrer" : undefined}
                 className="block text-sm text-[#687184] mb-[8px] hover:text-[#44D4B4] transition-colors duration-150"
-                dangerouslySetInnerHTML={{ __html: item.label }}
-              />
+              >
+                {item.label}
+              </a>
             ))}
           </div>
         </div>

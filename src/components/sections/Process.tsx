@@ -1,10 +1,10 @@
 // React JSX transform handles imports automatically
 
 const steps = [
-  { num: "01", title: "Listen &amp; understand", desc: "Start with your goals, challenges and audience." },
-  { num: "02", title: "Think &amp; design", desc: "Shape a clear plan around your vision." },
-  { num: "03", title: "Build &amp; refine", desc: "Turn the plan into progress through testing and feedback." },
-  { num: "04", title: "Launch &amp; grow", desc: "Fine-tune the work and agree on next steps." },
+  { num: "01", title: "Listen & understand", desc: "Start with your goals, challenges and audience." },
+  { num: "02", title: "Think & design", desc: "Shape a clear plan around your vision." },
+  { num: "03", title: "Build & refine", desc: "Turn the plan into progress through testing and feedback." },
+  { num: "04", title: "Launch & grow", desc: "Fine-tune the work and agree on next steps." },
 ];
 
 export default function Process({ className }: { className?: string }) {

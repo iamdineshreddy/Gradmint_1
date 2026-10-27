@@ -3,7 +3,7 @@
 const services = [
   {
     num: "01",
-    title: "UI/UX &amp; Design",
+    title: "UI/UX & Design",
     desc: "Digital experiences shaped around people.",
     items: ["User journeys and wireframes", "Interactive prototypes", "Visual identity and design systems"],
   },
@@ -21,7 +21,7 @@ const services = [
   },
   {
     num: "04",
-    title: "Cloud &amp; DevOps",
+    title: "Cloud & DevOps",
     desc: "Reliable infrastructure and smoother delivery.",
     items: ["Cloud setup and migration", "CI/CD and deployment automation", "Monitoring and infrastructure support"],
   },
@@ -33,7 +33,7 @@ const services = [
   },
   {
     num: "06",
-    title: "Testing &amp; Quality Assurance",
+    title: "Testing & Quality Assurance",
     desc: "Digital experiences tested with care.",
     items: ["Manual and automated testing", "API and regression testing", "Performance and usability checks"],
   },
