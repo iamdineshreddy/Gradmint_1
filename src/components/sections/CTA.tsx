@@ -23,10 +23,10 @@ export default function CTA() {
             Let&rsquo;s talk about it &rarr;
           </a>
           <a
-            href="/careers/"
+            href="/internships/"
             className="button-outline inline-flex items-center justify-center gap-[6px] px-[20px] py-[11px] text-[13px] font-700 border border-line text-[#303747] rounded-[6px] hover:border-brand-mint hover:text-brand-mint transition-colors duration-150"
           >
-            Looking to grow? Explore careers &rarr;
+            Looking to learn? Explore internships &rarr;
           </a>
         </div>
       </div>

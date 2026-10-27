@@ -51,17 +51,6 @@ export default function About() {
                   next&rdquo; a little clearer&mdash;and a lot more achievable.
                 </p>
               </div>
-              <div>
-                <p className="text-[#687184] leading-[1.8] text-[15px] mb-[24px]">
-                  Based in Hyderabad, our focus is practical progress. For businesses, that means
-                  thoughtful digital solutions. For students and graduates, it means learning
-                  through real projects, guided mentorship and internship experience.
-                </p>
-                <p className="text-[#687184] leading-[1.8] text-[15px]">
-                  We&rsquo;re here to make the journey from &ldquo;what if&rdquo; to &ldquo;what&rsquo;s
-                  next&rdquo; a little clearer&mdash;and a lot more achievable.
-                </p>
-              </div>
             </div>
           </div>
         </section>

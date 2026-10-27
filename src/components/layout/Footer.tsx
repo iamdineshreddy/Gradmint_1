@@ -6,7 +6,7 @@ const exploreLinks = [
   { href: "/", label: "Home" },
   { href: "/about/", label: "About us" },
   { href: "/services/", label: "Our services" },
-  { href: "/careers/", label: "Careers" },
+  { href: "/internships/", label: "Internship programmes" },
 ];
 
 const servicesLinks = [

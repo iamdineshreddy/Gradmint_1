@@ -42,7 +42,14 @@ export default function Hero() {
           </div>
           <div className="hero-visual min-w-0 relative">
             <div className="frame w-full aspect-[4/3] border border-line rounded-[6px] bg-[#E9F7F2] overflow-hidden relative">
-              {/* Placeholder visual - no image yet */}
+              <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="300" fill="#E9F7F2" />
+                <path d="M60 90 C 100 50, 300 50, 340 90 C 380 130, 380 170, 340 210 C 300 250, 100 250, 60 210 C 20 170, 20 130, 60 90 Z" fill="#44D4B4" fillOpacity="0.3" />
+                <path d="M80 110 C 120 70, 280 70, 320 110 C 360 150, 360 190, 320 230 C 280 270, 120 270, 80 230 C 40 190, 40 150, 80 110 Z" fill="#00A0B0" fillOpacity="0.2" />
+                <circle cx="120" cy="120" r="30" fill="#0078C0" fillOpacity="0.4" />
+                <circle cx="280" cy="180" r="25" fill="#38B880" fillOpacity="0.4" />
+                <circle cx="200" cy="90" r="20" fill="#18B0A0" fillOpacity="0.3" />
+              </svg>
             </div>
           </div>
         </div>

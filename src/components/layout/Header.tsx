@@ -6,7 +6,7 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/about/", label: "About" },
   { href: "/services/", label: "Services" },
-  { href: "/careers/", label: "Careers" },
+  { href: "/internships/", label: "Internships" },
 ];
 
 export default function Header() {

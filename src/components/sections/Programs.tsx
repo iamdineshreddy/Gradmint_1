@@ -62,8 +62,8 @@ export default function Programs() {
           ))}
         </div>
         <p className="fine mt-[24px] text-[11px] text-[#687184] tracking-[0.06em] uppercase max-w-[720px] mx-auto">
-          Eight specialisations are listed on the current programmes page. Ask the team about
-          prerequisites, upcoming cohorts, fees and availability.
+          Three specialisations are currently offered. Ask the team about prerequisites,
+          upcoming cohorts, fees and availability.
         </p>
       </div>
     </section>

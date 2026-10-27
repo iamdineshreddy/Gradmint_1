@@ -52,10 +52,10 @@ export default function Contact() {
     setTimeout(() => {
       setSubmitting(false);
       setStatus({
-        text: "If you sent the message in WhatsApp, your enquiry is on its way.",
-        kind: "success",
+        text: "WhatsApp has been opened. Please press Send in WhatsApp to deliver your enquiry.",
+        kind: "info",
       });
-    }, 1200);
+    }, 0);
   };
 
   const handleEmail = () => {
@@ -89,17 +89,14 @@ export default function Contact() {
     });
 
     const mailto =
-      `mailto:info@gradminttechnologiespvtltd.com?subject=${encodeURIComponent("Gradmint enquiry &mdash; " + data.interest)}&body=${encodeURIComponent(messageText)}`;
+      `mailto:info@gradminttechnologiespvtltd.com?subject=${encodeURIComponent("Gradmint enquiry — " + data.interest)}&body=${encodeURIComponent(messageText)}`;
 
     window.location.href = mailto;
 
-    setTimeout(() => {
-      setSubmitting(false);
-      setStatus({
-        text: "If you sent the email, your enquiry is on its way.",
-        kind: "success",
-      });
-    }, 1200);
+    setStatus({
+      text: "An email draft has been opened. Please press Send in your email app to deliver your enquiry.",
+      kind: "info",
+    });
   };
 
   return (
@@ -196,7 +193,7 @@ export default function Contact() {
               Share a few details, then choose to open WhatsApp or a pre-filled email. Nothing is
               sent until you press Send in that app.
             </p>
-            <form id="contact-form" onSubmit={handleSubmit} noValidate={true}>
+            <form id="contact-form" onSubmit={handleSubmit}>
               <label className="block mb-[6px] text-[12px] font-700 tracking-[0.04em] text-[#303747]">
                 Your name <span className="text-[#c0392b]">*</span>
               </label>
