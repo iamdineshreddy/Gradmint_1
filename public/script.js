@@ -1,5 +1,5 @@
 (() => {
- const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector("nav");
+ const toggle=document.querySelector(".menu"),nav=document.querySelector("nav");
  if(toggle&&nav){toggle.addEventListener("click",()=>{const opened=toggle.getAttribute("aria-expanded")==="true";toggle.setAttribute("aria-expanded",String(!opened));nav.classList.toggle("is-open",!opened);toggle.setAttribute("aria-label",opened?"Open navigation":"Close navigation")});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{toggle.setAttribute("aria-expanded","false");nav.classList.remove("is-open")}));document.addEventListener("keydown",e=>{if(e.key==="Escape"){toggle.setAttribute("aria-expanded","false");nav.classList.remove("is-open");toggle.focus()}})}
  const year=document.getElementById("year");if(year)year.textContent=new Date().getFullYear();
  const form=document.getElementById("contact-form");if(!form)return;
