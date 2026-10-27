@@ -23,11 +23,11 @@ export default function Header() {
           aria-label="Gradmint Technologies home"
         >
           <img
-            className="brand-logo w-auto h-[34px]"
+            className="brand-logo w-auto h-[41px]"
             src="/assets/logo.jpg"
             alt="Gradmint Technologies logo"
           />
-          <FluidBrandText className="flex-shrink-0" variant="header" />
+          <FluidBrandText className="flex-shrink-0" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-[26px] text-sm font-600 text-[#687184]">

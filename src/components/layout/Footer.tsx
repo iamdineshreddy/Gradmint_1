@@ -43,8 +43,8 @@ export default function Footer() {
               className="brand-lockup inline-flex items-center gap-[10px] text-decoration-none mb-[14px]"
               aria-label="Gradmint Technologies home"
             >
-              <img className="brand-logo w-auto h-[34px]" src="/assets/logo.jpg" alt="Gradmint Technologies logo" />
-              <FluidBrandText className="flex-shrink-0" variant="footer" />
+              <img className="brand-logo w-auto h-[41px]" src="/assets/logo.jpg" alt="Gradmint Technologies logo" />
+              <FluidBrandText className="flex-shrink-0" />
             </Link>
             <p className="text-sm text-[#687184] leading-[1.8] mb-[10px]">
               Building better technology.<br />
