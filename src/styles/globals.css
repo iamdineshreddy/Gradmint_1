@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 72px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    margin: 0;
+    background-color: #FAF9F6;
+    color: #303747;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica Neue, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: -0.008em;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #0078C0;
+    outline-offset: 2px;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: 12px;
+    top: -70px;
+    z-index: 100;
+    background: #0078C0;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .skip-link:focus {
+    top: 12px;
+  }
+}
+
+.fluid-primary {
+  will-change: background-position;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fluid-primary {
+    animation: none !important;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    max-width: calc(100vw - 40px);
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 1180px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .section-wrapper {
+    position: relative;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 768px) {
+    .section-wrapper {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 1260px;
+    }
+  }
+}
