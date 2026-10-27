@@ -192,3 +192,14 @@ footer .brand-name .brand-gradmint{font-size:29px}
   footer .brand-logo{width:48px;height:48px}
   footer .brand-name .brand-gradmint{font-size:25px}
 }
+
+
+/* Use the official logo as the sole header brand; enlarge to 120px */
+header .brand-lockup{gap:0!important}
+header .brand-lockup .brand-name{display:none!important}
+header .brand-lockup .brand-logo{width:120px;height:120px;max-width:none;object-fit:contain}
+header{min-height:132px}
+@media(max-width:720px){
+  header{min-height:100px}
+  header .brand-lockup .brand-logo{width:88px;height:88px}
+}
