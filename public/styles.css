@@ -203,3 +203,10 @@ header{min-height:132px}
   header{min-height:100px}
   header .brand-lockup .brand-logo{width:88px;height:88px}
 }
+
+
+/* Final logo dimensions: 120px wide × 88px high */
+header .brand-lockup .brand-logo{width:120px;height:88px;object-fit:contain}
+@media(max-width:720px){
+  header .brand-lockup .brand-logo{width:120px;height:88px}
+}
