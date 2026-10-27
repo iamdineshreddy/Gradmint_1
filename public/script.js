@@ -1,0 +1,11 @@
+(() => {
+ const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector("nav");
+ if(toggle&&nav){toggle.addEventListener("click",()=>{const opened=toggle.getAttribute("aria-expanded")==="true";toggle.setAttribute("aria-expanded",String(!opened));nav.classList.toggle("is-open",!opened);toggle.setAttribute("aria-label",opened?"Open navigation":"Close navigation")});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{toggle.setAttribute("aria-expanded","false");nav.classList.remove("is-open")}));document.addEventListener("keydown",e=>{if(e.key==="Escape"){toggle.setAttribute("aria-expanded","false");nav.classList.remove("is-open");toggle.focus()}})}
+ const year=document.getElementById("year");if(year)year.textContent=new Date().getFullYear();
+ const form=document.getElementById("contact-form");if(!form)return;
+ const status=document.getElementById("form-status");
+ function data(){if(!form.reportValidity())return null;const f=new FormData(form);return{name:String(f.get("name")||"").trim(),email:String(f.get("email")||"").trim(),interest:String(f.get("interest")||"General enquiry"),message:String(f.get("message")||"").trim()}}
+ function message(d){return ["Hello Gradmint Technologies,","","Name: "+d.name,"Email: "+d.email,"Enquiry: "+d.interest,"","Message:",d.message].join("\n")}
+ form.addEventListener("submit",e=>{e.preventDefault();const d=data();if(!d)return;status.textContent="Opening WhatsApp. Review the message in WhatsApp and press Send to deliver your enquiry.";window.open("https://wa.me/919177719681?text="+encodeURIComponent(message(d)),"_blank","noopener,noreferrer")});
+ const email=document.getElementById("email-submit");if(email)email.addEventListener("click",()=>{const d=data();if(!d)return;status.textContent="Opening an email draft. Review it and press Send to deliver your enquiry.";window.location.href="mailto:info@gradminttechnologiespvtltd.com?subject="+encodeURIComponent("Gradmint enquiry — "+d.interest)+"&body="+encodeURIComponent(message(d))});
+})();
